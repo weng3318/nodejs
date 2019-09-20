@@ -1,0 +1,23 @@
+<%- include('parts/html_head') %>
+<%- include('parts/html_navbar') %>
+<div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">姓名</th>
+            <th scope="col">年齡</th>
+            <th scope="col">員工編號</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <% for(let i=0; i<sales.length; i++){ %>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>bobo@mdo</td>
+          </tr>
+            <% } %>
+        </tbody>
+      </table>
+    </div>
+    <%- include('parts/html_foot') %>
