@@ -37,8 +37,8 @@ app.get('/try-qs', (req, res)=>{
 app.get('/try-post-form', (req, res)=>{
     res.render('try-post-form');
 });
-app.post('/try-post-form',(req, res)=>{
-    res.render('try-post-form', req.body);
+app.post('/try-post-form',urlencodedParser,(req, res)=>{
+    res.render('try-post-form', req.body);//進ejs相對應變數
     // res.send(JSON.stringify(req.body))
 });
 
