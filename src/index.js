@@ -208,9 +208,9 @@ app.get('/try-db2:page?', (req, res) => {
 
 });
 
-        app.get('/json-test', (req, res) => {
-            res.render('json-test');
-        });
+        // app.get('/json-test', (req, res) => {
+        //     res.render('json-test');
+        // });
 //0927
 
 app.use((req, res) => {
