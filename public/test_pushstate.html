@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./lib/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <!-- 按鈕 id -->
+<button id="p">push</button>
+
+
+<script>
+    //抓按鈕
+    const p = $('#p');
+    //宣告數值
+    let i = 1;
+    //按鈕 按鍵行為 進行函式
+    p.click(function(){
+        //按鈕後的頁數每次都+1
+        i++;
+        //歷史.推送狀態({變數:變數},'字母字串'+變數,'頁數'+變數)
+        history.pushState({i:i}, 't'+i, '/page'+i);
+    });
+    //樹.流行狀態 = (事件)=>{
+    //    印(歷史.州)
+    window.onpopstate = function(event){
+        console.log(history.state);
+    };
+
+</script>
+
+</body>
+</html>

@@ -1,6 +1,5 @@
 # 忽略 secret.yml 檔案
 node_modules/
-public/
 build/
 
 # 忽略 config 目錄下的 database.yml 檔案

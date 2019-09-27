@@ -1,0 +1,26 @@
+<%- include('parts/html_head') %>
+<%- include('parts/html_navbar') %>
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let r of rows){ %>
+            <tr>
+                <td><%= r.AC_sid %></td>
+                <td><%= r.AC_name %></td>
+                <td><%= r.AC_title %></td>
+                <td><%= r.AC_date %></td>
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+</div>
+
+<%- include('parts/html_foot') %>
